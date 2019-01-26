@@ -247,7 +247,7 @@ date.setTime(date.getTime() - skew)
 var now = new Date()
 fixDate(now)
 now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
-deleteCookie("counter")
+
 var visits2 = getCookie("counter")
 if (!visits2)
 visits2 = 1

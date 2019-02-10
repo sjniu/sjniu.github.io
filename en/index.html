@@ -248,13 +248,13 @@ var now = new Date()
 fixDate(now)
 now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
 
-var visits2 = getCookie("counter")
-if (!visits2)
-visits2 = 1
+var visits = getCookie("counter")
+if (!visits)
+visits = 1
 else
-visits2 = parseInt(visits2) + 1
-setCookie("counter", visits2, now)
-document.write("您是第" + visits2 + "位访客！")
+visits = parseInt(visits) + 1
+setCookie("counter", visits, now)
+document.write("您是第" + visits + "位访客！")
 // -->
 </script>
 	</font></p>		
